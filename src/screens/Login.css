@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background: url('https://cdn.hipwallpaper.com/i/98/21/dUyCkp.jpg') center
+    no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+.loginScreen__button {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--blue);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.loginScreen__logo {
+  position: fixed;
+  top: 20px;
+  font-family: 'Berkshire Swash', cursive;
+  background-color: transparent;
+  color: var(--blue);
+  letter-spacing: 3px;
+  font-weight: 800;
+  left: 0;
+  width: 200px;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.loginScreen__gradient {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.loginScreen__body {
+  position: absolute;
+  top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  color: #fff;
+  padding: 20px;
+}
+
+.loginScreen__body > h1 {
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+}
+
+.loginScreen__body > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.loginScreen__body > h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.loginScreen__input {
+  margin: 20px;
+}
+
+.loginScreen__input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 30px;
+  width: 30%;
+  border: none;
+  max-width: 600px;
+}
+
+.loginScreen__getStarted {
+  padding: 15.8px 20px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  background-color: var(--blue);
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .loginScreen__body > h1 {
+    font-size: 2.8rem;
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .loginScreen__logo {
+    font-size: 1.5rem;
+    top: 25px;
+  }
+
+  .loginScreen__body > h1 {
+    font-size: 2.3rem;
+    width: 90%;
+  }
+
+  .loginScreen__body > h2 {
+    font-size: 1.3rem;
+    width: 90%;
+  }
+
+  .loginScreen__body > h3 {
+    font-size: 1rem;
+    width: 88%;
+  }
+
+  .loginScreen__input {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .loginScreen__input > form > input {
+    width: 40%;
+    max-width: 400px;
+  }
+
+  .loginScreen__input > form > button {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .loginScreen__logo {
+    font-size: 1.4rem;
+  }
+
+  .loginScreen__input > form > button {
+    margin-right: 35px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .loginScreen__body > h1 {
+    font-size: 2.1rem;
+    width: 85%;
+  }
+
+  .loginScreen__input > form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 5px;
+    overflow-x: hidden;
+  }
+
+  .loginScreen__input > form > input {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .loginScreen__body {
+    top: 20%;
+  }
+
+  .loginScreen__body > h1 {
+    font-size: 2rem;
+    width: 85%;
+  }
+
+  .loginScreen__input > form {
+    width: 90%;
+    margin-right: 5px;
+    overflow-x: hidden;
+  }
+
+  .loginScreen__input > form > input {
+    width: 79%;
+  }
+}

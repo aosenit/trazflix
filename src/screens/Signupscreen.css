@@ -1,0 +1,86 @@
+.signupScreen {
+  max-width: 300px;
+  padding: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.signupScreen > form {
+  display: flex;
+  flex-direction: column;
+}
+.signupScreen > form > h1 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.signupScreen > form > input {
+  outline-width: 0;
+  height: 40px;
+  margin-bottom: 14px;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.signupScreen > form > button {
+  color: #fff;
+  font-size: 1rem;
+  background-color: var(--blue);
+  padding: 16px 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.signupScreen > form > button:hover {
+  opacity: 0.8;
+}
+
+.signupScreen > form > h4 {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.signupScreen__gray {
+  color: gray;
+}
+
+.signupScreen__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+  .signupScreen {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .signupScreen {
+    width: 70%;
+    position: relative;
+    left: -35px;
+  }
+
+  .signupScreen > form > h4 {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .signupScreen {
+    left: -40px;
+  }
+
+  .signupScreen > form > h4 {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+}
