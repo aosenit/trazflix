@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from './features/userSlice';
 import ProfileScreen from './screens/ProfileScreen';
 
+
 function App() {
   const users = useSelector(selectUser)
   const dispatch = useDispatch()
@@ -31,8 +32,8 @@ function App() {
   return (
     <div className="app">
     <Router>
-     
-        {!users ? (<Login />) 
+   
+        {!users ? ( <Login />) 
         :( 
           <Switch> 
             <Route path='/profile'> <ProfileScreen /> </Route>

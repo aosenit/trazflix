@@ -15,13 +15,15 @@
   justify-content: space-between;
 }
 
+
 .nav__black {
   background-color: #111;
 }
 
 .nav__logo {
   position: fixed;
-  top: 10px;
+  top: 15px;
+  font-size: 1.5rem;
   font-family: 'Berkshire Swash', cursive;
   background-color: transparent;
   color: var(--blue);
@@ -29,13 +31,13 @@
   font-weight: 800;
   left: 0;
   width: 200px;
-
   cursor: pointer;
   padding-left: 20px;
 }
 
 .nav__avatar {
   position: fixed;
+  top: 15px;
   right: 20px;
   height: 30px;
   width: 30px;

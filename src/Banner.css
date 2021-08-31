@@ -1,5 +1,5 @@
 .banner {
-  height: 448px;
+  height: 600px;
   position: relative;
   object-fit: contain;
   color: white;
@@ -8,18 +8,18 @@
 
 .banner__content {
   margin-left: 20px;
-  padding-top: 8rem;
+  padding-top: 10rem;
   max-width: 500px;
 }
 
 .banner__title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 800;
   padding-bottom: 1rem;
 }
 
 .banner__description {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.4;
   padding-top: 1rem;
   max-width: 380px;
@@ -32,7 +32,7 @@
   outline: none;
   color: #fff;
   font-weight: 700;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2.5rem;
   border-radius: 0.2vw;
   margin-right: 1rem;
   background-color: rgba(51, 51, 51, 0.5);
@@ -44,7 +44,7 @@
   background-color: #e6e6e6;
 }
 .banner--fadeBottom {
-  height: 7.4rem;
+  height: 12.9rem;
   background-image: linear-gradient(
     180deg,
     transparent,

@@ -1,29 +1,31 @@
 import { useRef } from 'react'
 import { auth } from '../firebase'
-import './Signupscreen.css'
 
-function SignupScreen({setRegister}) {
+
+
+function RegisterScreen({setRegister}) {
+    
     const emailRef = useRef()
     const passwordRef = useRef()
 
-
-    const signIn = (e) => {
+    const registered = (e) => {
         e.preventDefault()
         auth
-        .signInWithEmailAndPassword(
-            emailRef.current.value,
+        .createUserWithEmailAndPassword(
+            emailRef.current.value, 
             passwordRef.current.value
         )
-        .catch((error) =>{
+        .catch((error) => {
             alert(error.message)
         })
-        
     }
+
+
 
     return (
         <div className='signupScreen'>
             <form>
-                <h1>Sign In</h1>
+                <h1>Sign Up</h1>
                 <input 
                     ref={emailRef} 
                     type="email" 
@@ -37,15 +39,16 @@ function SignupScreen({setRegister}) {
                     placeholder='Password' 
                     className="signup__input" 
                     required
+                    
                 />
-                <button type='submit' onClick={signIn}>Sign in</button>
+                <button type='submit' onClick={registered}>Sign up</button>
                 <h4>
                     <span className="signupScreen__gray">New to Netflix ? </span> 
-                    <span className='signupScreen__link' onClick={() => setRegister(true)}>Sign up now</span>
+                    <span className='signupScreen__link' onClick={() => setRegister(false) }>Sign In now</span>
                 </h4>
             </form>
         </div>
     )
 }
 
-export default SignupScreen
+export default RegisterScreen
